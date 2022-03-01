@@ -14,7 +14,7 @@
     <a href="/games"><img src="../images/svg/as.svg" alt="AppStore" class=" w-40 cursor-pointer"></a>
   </div>
 </div>
-<div class="about-block max-w-screen-lg m-auto flex justify-between mt-40">
+<div class="about-block max-w-screen-xl m-auto flex justify-between mt-40">
   <div>
     <h1 class='font-semibold text-section text-white'><span class="text-red-600 text-section mr-2">-</span>About Us<span class="text-red-600 text-section ml-2">-</span></h1>
     <p class=" mb-9 text-white text-p w-114 font-light">All in on transparency, creativity, and speed. Partner with a tight-knit team of 100+ game lovers who move quickly, talk openly, and play fairly – with a whole lot of energy and creativity.
@@ -31,26 +31,65 @@ All in on transparency, creativity, and speed. Partner with a tight-knit team of
 
 <!-- //slider-block -->
 
-<div class="slider-block mt-40">
-      <h1 class='font-semibold text-section text-white text-center'><span class="text-red-600 text-section mr-2">-</span>Our Games<span class="text-red-600 text-section ml-2">-</span></h1>
+<div class="slider-block mt-40 mb-28 max-w-screen-xl m-auto">
+      <h1 class='font-semibold text-section mb-20 text-white text-center'><span class="text-red-600 text-section mr-2">-</span>Our Games<span class="text-red-600 text-section ml-2">-</span></h1>
 
-      <div class="slider"></div>
+      <div class="slider">
+        <div class=" border-orange border-2 rounded-large bg-blue-a p-6 max-w-xl relative">
+          <h1 class=" text-white font-semibold text-lg">Smile Helix Jump</h1>
+          <p class=" text-white text-p max-w-slide font-light mt-4 mb-14">
+           A fantastic journey to find the castle in the sky you first saw when you were young.
+           See the beautiful scenery of the sea, mountains and valleys on your journey to the castle.
+          </p>
+          <div class="flex justify-between max-w-game-stors ">
+              <a href="/games"><img src="../images/svg/gp.svg" alt="GooglePlay" class=" w-110px cursor-pointer"></a>
+              <a href="/games"><img src="../images/svg/as.svg" alt="AppStore" 
+              class=" w-110px cursor-pointer "></a>
+            
+          </div>
+          <div class="iphone  absolute -top-14 left-80 max-w-full flex justify-center">
+            <img class=" relative z-10" src="../images/games/iphone.svg" alt="">
+            <img class=" absolute top-5 z-ziro" src="../images/games/game.svg" alt="">
+            <div class="arrows w-20 flex items-center justify-around absolute -bottom-1  border-2 rounded-smm py-2 px-3 bg-orange z-20">
+              <img class=" cursor-pointer" src="../images/games/arrow-right.svg" alt="">
+               <img class=" mx-1" src="../images/games/line.svg" alt="">
+              <img class=" cursor-pointer" src="../images/games/arrow-left.svg" alt="">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
 
+<!-- Blog -->
+<div class="Blog-block mt-40 mb-28 max-w-screen-xl m-auto">
+  <h1 class='font-semibold text-section mb-20 text-white text-center'><span class="text-red-600 text-section mr-2">-</span>Blog<span class="text-red-600 text-section ml-2">-</span></h1>
+  <div class="Blogs">
+
+  </div>
+  <div class="flex justify-center">
+   <a class="readmore  text-sm text-white rounded-smm cursor-pointer px-9 py-2 " href="/blog">Read More</a>
+  </div>
 </div>
+</div>
+<Footer />
+
 
 </template>
 
 <script>
 import { ref } from '@vue/reactivity'
 import Navbar from '../components/Navbar.vue'
+import Footer from '../components/Footer.vue'
 
 
 export default {
-  components:{Navbar},
+  components:{Navbar,Footer},
   setup(){
+  
    
-  }
+  },
 
  
 }
@@ -65,5 +104,6 @@ export default {
 
 
 }
+
 
 </style>

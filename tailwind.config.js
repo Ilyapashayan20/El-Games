@@ -13,6 +13,7 @@ module.exports = {
         
     },
   
+  
     borderRadius: {
       'none': '0',
       'smm': '2.6rem',
@@ -21,14 +22,32 @@ module.exports = {
       'md': '0.375rem',
       'lg': '0.5rem',
       'full': '9999px',
-      'large': '12px',
+      'large': '24px',
     },
     extend: {
       zIndex: {
-        minus: ['-1']
+        minus: ['-1'],
+        ziro: ['0']
+      },
+      inset: {
+        '720px': '720px',
       },
       width: {
         '114': '29.5rem',
+        '110px':'110px',
+        
+      },
+      maxWidth: {
+        'lgg': '20rem',
+        'game-stors': '15rem',
+        'slide': '18rem',
+      },
+      colors: {
+        'blue-a': '#1B2A47',
+        'orange': '#F03E1D',
+        'facebook': '#1877F2',
+        'youtube': '#FF0000',
+        'instagarm': '#F00073',
       },
       
     },
