@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class=" flex justify-between  max-w-screen-xl m-auto mt-20">
+  <div class=" flex justify-between  max-w-7xl m-auto mt-20">
     <img class=" absolute right-0 w-28" src="../images/svg/green-cube.svg" alt="">
        <img class=" absolute top-5 left-1/2 top-20 w-32" src="../images/svg/yellow.png" alt="">
     <div v-for="{id,name,text} in abouts" :key="id">
@@ -15,7 +15,7 @@
   </div>
   <img class=" top-80 absolute" src="../images/svg/blue-ring.png" alt="">
 
-    <div class=" flex justify-between items-center  max-w-screen-xl m-auto mt-1 pr-12 ">
+    <div class=" flex justify-between items-center  max-w-7xl m-auto mt-1 pr-12 ">
     <img class=" absolute top-720px right-0 w-28" src="../images/svg/Сylinder.svg" alt="">
       
     <div class=" flex items-center relative">

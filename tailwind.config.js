@@ -1,6 +1,15 @@
 module.exports = {
   content: [],
   theme: {
+    screens: {
+     
+      'md': [{'max': '960px' }],
+      'smm': [{'max': '629px' }],
+      'lg': [{'max': '1440px' }],
+      'lm': [{'max': '1150px' }],
+      'l': [{'max': '476px' }],
+      's': [{'max': '360px' }],
+    },
    
       fontSize: {
         sm: ['18px', '21px'],
@@ -48,6 +57,7 @@ module.exports = {
         'facebook': '#1877F2',
         'youtube': '#FF0000',
         'instagarm': '#F00073',
+        'blue-menu': '#1D2840',
       },
       
     },

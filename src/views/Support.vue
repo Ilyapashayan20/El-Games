@@ -1,7 +1,7 @@
 <template>
 <div class=" px-9">
   <Navbar />
-  <div class=" mt-24 max-w-screen-xl m-auto flex justify-between items-center">
+  <div class=" mt-24 max-w-7xl m-auto flex justify-between items-center">
     <div class="support-block ">
       <img src="../images/svg/glanak.png" class=" absolute left-0" alt="">
        <h1 class='font-semibold text-section mb-3 text-white'><span class="text-red-600 text-section mr-2">-</span>Support<span class="text-red-600 text-section ml-2">-</span></h1>

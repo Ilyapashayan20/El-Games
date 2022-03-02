@@ -26,9 +26,9 @@
               </div>
   </div>
 </div>
-<div class=" my-5 flex justify-between max-w-screen-xl m-auto">
+<div class="px-7 my-5 flex justify-between  m-auto">
   <h1 class=" text-white opacity-50">© 2022 ELGAMES</h1>
-  <h1 class="text-white">Privacy Policy · Terms of Use · GDPR</h1>
+  <h1 class="text-white">Privacy Policy · Terms of Use · GDPR</h1> 
 </div>
 </template>
 
