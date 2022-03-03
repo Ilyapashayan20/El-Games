@@ -40,9 +40,9 @@
                      </a>
                  </div>
               </div>
-              <div class="flex flex-col px-9">
-                <img class="mb-2" src="../images/svg/gp.svg" alt="">
-                 <img src="../images/svg/as.svg" alt="">
+              <div class="flex flex-col ">
+                <img class="mb-2 w-44" src="../images/svg/gp.svg" alt="">
+                 <img class="w-44" src="../images/svg/as.svg" alt="">
 
               </div>
 

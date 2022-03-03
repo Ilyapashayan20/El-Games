@@ -3,7 +3,7 @@
   <div class="max-w-screen-xl m-auto py-6 flex justify-between items-center ">
         <a class="cursor-pointer" href="/"><img src="../images/logo/logo2.svg" alt="el-game"></a>
 
-        <nav class=" w-96 flex justify-between mr-10">
+        <nav class=" w-96 flex justify-between mr-10 mdd:hidden">
                   <router-link active-class="active" class="cursor-pointer text-white text-sm font-medium ml-3" :to="{name : 'About'}">About Us</router-link>
                   <router-link class="cursor-pointer text-white text-sm font-medium ml-3" :to="{name : 'Games'} " active-class="active">Games</router-link>
                   <router-link class="cursor-pointer text-white text-sm font-medium ml-3" :to="{name : 'Blog'}" active-class="active">Blog</router-link>
@@ -26,7 +26,7 @@
               </div>
   </div>
 </div>
-<div class="px-7 my-5 flex justify-between  m-auto">
+<div class="px-7 my-5 flex justify-between  m-auto smm:flex-col smm:justify-center smm:items-center">
   <h1 class=" text-white opacity-50">© 2022 ELGAMES</h1>
   <h1 class="text-white">Privacy Policy · Terms of Use · GDPR</h1> 
 </div>
