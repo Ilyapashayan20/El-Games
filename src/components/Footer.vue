@@ -1,6 +1,6 @@
 <template>
 <div class=" border-t-2 border-b-2 border-gray-600 px-7">
-  <div class="max-w-screen-xl m-auto py-6 flex justify-between items-center ">
+  <div class="max-w-screen-xl m-auto py-6 flex justify-between items-center l:flex-col ">
         <a class="cursor-pointer" href="/"><img src="../images/logo/logo2.svg" alt="el-game"></a>
 
         <nav class=" w-96 flex justify-between mr-10 mdd:hidden">
@@ -9,7 +9,7 @@
                   <router-link class="cursor-pointer text-white text-sm font-medium ml-3" :to="{name : 'Blog'}" active-class="active">Blog</router-link>
                   <router-link class="cursor-pointer text-white text-sm font-medium ml-3" :to="{name : 'Support'}" active-class="active">Support</router-link>
               </nav>
-              <div class="socialmedia flex items-center w-32 justify-between">
+              <div class="socialmedia flex items-center w-32 justify-between l:mt-4 ">
                  <div class=" rounded-md p-2 cursor-pointer bg-facebook">
                      <a href="/"><img src="../images/icons/facebook.svg" alt="facebook"></a>
                  </div>

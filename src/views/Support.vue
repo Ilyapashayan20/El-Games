@@ -1,24 +1,24 @@
 <template>
-<div class=" px-9">
+<div class=" ">
   <Navbar />
   <div class=" mt-24 max-w-7xl m-auto flex justify-between items-center md:flex-col">
-    <div class="support-block ">
-      <img src="../images/svg/glanak.png" class=" absolute left-0" alt="">
+    <div class="support-block l:max-w-full l:px-5 ">
+      <img src="../images/svg/glanak.png" class=" absolute left-0 smm:hidden" alt="">
        <h1 class='font-semibold text-section mb-3 text-white'><span class="text-red-600 text-section mr-2">-</span>Support<span class="text-red-600 text-section ml-2">-</span></h1>
-       <p class=" mb-9 text-white text-p w-114 font-light">All in on transparency, creativity, and speed. Partner with a tight-knit team of 100+ game lovers who move quickly, talk openly, and play fairly – with a whole lot of energy and creativity.
+       <p class=" mb-9 text-white text-p w-114 font-light l:max-w-full  ">All in on transparency, creativity, and speed. Partner with a tight-knit team of 100+ game lovers who move quickly, talk openly, and play fairly – with a whole lot of energy and creativity.
       <br>
       <br>
 All in on transparency, creativity, and speed. Partner with a tight-knit team of 100+ game lovers who move quickly, talk openly, and play fairly – with a whole lot of energy and creativity.</p>
     </div>
-    <img class=" mr-32" src="../images/svg/message.png" alt="">
-    <img class=" absolute w-44 top-40 right-0" src="../images/svg/ring.png" alt="">
+    <img class=" mr-32 smm:mr-0" src="../images/svg/message.png" alt="">
+    <img class=" absolute w-44 top-40 right-0 smm:hidden" src="../images/svg/ring.png" alt="">
   </div>
 
 </div>
 
   <div class="form-message mt-32 mb-28">
     <h1 class='font-semibold text-section text-white text-center'><span class="text-red-600 text-section mr-2">-</span>Contact us<span class="text-red-600 text-section ml-2">-</span></h1>
-    <div class="flex justify-center">
+    <div class="flex justify-center l:px-5">
     <form @submit.prevent="sendEmail" class="flex flex-col w-80 mt-7" >
     <input v-model="name" class=" bg-transparent border-2 rounded-large border-white py-3 px-5 focus:border-red-700 focus:outline-none text-white text-sm" type="text" placeholder="Your Name" name="name" required>
     <input v-model="email" class=" my-4 bg-transparent border-2 rounded-large border-white py-3 px-5 focus:border-red-700 focus:outline-none text-white text-sm" type="email" placeholder="Email" name="email" required>

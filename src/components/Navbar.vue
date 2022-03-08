@@ -41,8 +41,8 @@
                  </div>
               </div>
               <div class="flex flex-col ">
-                <img class="mb-2 w-44" src="../images/svg/gp.svg" alt="">
-                 <img class="w-44" src="../images/svg/as.svg" alt="">
+                <img class="mb-2 w-36" src="../images/svg/gp.svg" alt="">
+                 <img class="w-36" src="../images/svg/as.svg" alt="">
 
               </div>
 

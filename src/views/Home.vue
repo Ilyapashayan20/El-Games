@@ -1,7 +1,7 @@
 <template >
 <Navbar />
 <div class="">
-<div class="section-1 pt-28  relative">
+<div class="section-1 pt-28  relative l:max-w-full">
   <img src="../images/svg/Polyhedron.svg" alt="Polyhedron" class=" absolute z-minus top-1 left-36 smm:w-20 smm:left-8 smm:top-10 md:left-24 md:w-24 md:top-6 ">
     <img src="../images/svg/Spiral.svg" alt="spiral" class=" absolute max-w-full z-minus top-12 right-36 md:w-32 md:right-28 smm:w-20 smm:right-14">
   <img src="../images/svg/Torus.svg" alt="Torus" class=" absolute max-w-full z-minus md:w-36 md:top-20 smm:w-28 smm:top-28 ">
@@ -17,7 +17,7 @@
     <a href="/games"><img src="../images/svg/as.svg" alt="AppStore" class=" w-40 cursor-pointer md:w-24"></a>
   </div>
 </div>
-<div class="about-block max-w-7xl m-auto flex justify-between mt-40 md:flex-col md:items-center md:px-3 ">
+<div class="about-block max-w-7xl m-auto flex justify-between mt-40 md:flex-col md:items-center md:px-3 l:max-w-full ">
   <div>
     <h1 class='font-semibold text-section text-white'><span class="text-red-600 text-section mr-2">-</span>About Us<span class="text-red-600 text-section ml-2">-</span></h1>
     <p class=" mb-9 text-white text-p w-114 font-light">All in on transparency, creativity, and speed. Partner with a tight-knit team of 100+ game lovers who move quickly, talk openly, and play fairly – with a whole lot of energy and creativity.
@@ -34,7 +34,7 @@ All in on transparency, creativity, and speed. Partner with a tight-knit team of
 
 <!-- //slider-block -->
 
-<div class="slider-block mt-40 mb-28 max-w-7xl m-auto">
+<!-- <div class="slider-block mt-40 mb-28 max-w-7xl m-auto l:max-w-full">
       <h1 class='font-semibold text-section mb-20 text-white text-center'><span class="text-red-600 text-section mr-2">-</span>Our Games<span class="text-red-600 text-section ml-2">-</span></h1>
 
       <div class="slider">
@@ -63,10 +63,10 @@ All in on transparency, creativity, and speed. Partner with a tight-knit team of
           </div>
         </div>
       </div>
-</div>
+</div> -->
 
 <!-- Blog -->
-<div class="Blog-block mt-40 mb-28 max-w-7xl m-auto">
+<div class="Blog-block mt-40 mb-28 max-w-7xl m-auto l:max-w-full">
   <h1 class='font-semibold text-section mb-20 text-white text-center'><span class="text-red-600 text-section mr-2">-</span>Blog<span class="text-red-600 text-section ml-2">-</span></h1>
   <div class="Blogs">
 
