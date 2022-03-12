@@ -16,7 +16,7 @@
               
 
               <!-- Mobile-menu -->
-                 <nav  class=" hidden smm:flex smm:flex-col smm:justify-between  smm:fixed smm:top-0  smm:w-56 smm:items-center  smm:bg-blue-menu smm:pt-28 smm:h-screen smm:z-30 smm:pb-5 duration-500  ease-in" :class="[open ?  'right-0' :'-right-full']"   >
+                 <nav  class=" hidden smm:flex smm:flex-col smm:justify-between  smm:fixed smm:top-0  smm:w-56 smm:items-center  smm:bg-blue-menu smm:pt-28 smm:h-screen smm:z-30 smm:pb-10 duration-500  ease-in" :class="[open ?  'right-0' :'-right-full']"   >
                    <div class=" flex flex-col  items-center text-sm " >
                   <router-link active-class="active" class="cursor-pointer text-white text-sm font-medium ml-3 smm:mb-6 smm:font-medium " :to="{name : 'About'}">About Us</router-link>
                   <router-link active-class="active" class="cursor-pointer smm:mb-6  text-white text-sm font-medium ml-3 smm:font-medium" :to="{name : 'Games'}">Games</router-link>
