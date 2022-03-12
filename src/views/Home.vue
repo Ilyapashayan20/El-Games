@@ -17,10 +17,10 @@
     <a href="/games"><img src="../images/svg/as.svg" alt="AppStore" class=" w-40 cursor-pointer md:w-24"></a>
   </div>
 </div>
-<div class="about-block max-w-7xl m-auto flex justify-between mt-40 md:flex-col md:items-center md:px-3 l:max-w-full ">
-  <div>
+<div class="about-block max-w-7xl m-auto flex justify-between mt-40 md:flex-col md:items-center md:px-3  smm:max-w-full ">
+  <div class=" ">
     <h1 class='font-semibold text-section text-white'><span class="text-red-600 text-section mr-2">-</span>About Us<span class="text-red-600 text-section ml-2">-</span></h1>
-    <p class=" mb-9 text-white text-p w-114 font-light">All in on transparency, creativity, and speed. Partner with a tight-knit team of 100+ game lovers who move quickly, talk openly, and play fairly – with a whole lot of energy and creativity.
+    <p class=" mb-9 text-white text-p max-w-sm font-light">All in on transparency, creativity, and speed. Partner with a tight-knit team of 100+ game lovers who move quickly, talk openly, and play fairly – with a whole lot of energy and creativity.
       <br>
       <br>
 All in on transparency, creativity, and speed. Partner with a tight-knit team of 100+ game lovers who move quickly, talk openly, and play fairly – with a whole lot of energy and creativity.</p>
@@ -68,10 +68,23 @@ All in on transparency, creativity, and speed. Partner with a tight-knit team of
 <!-- Blog -->
 <div class="Blog-block mt-40 mb-28 max-w-7xl m-auto l:max-w-full">
   <h1 class='font-semibold text-section mb-20 text-white text-center'><span class="text-red-600 text-section mr-2">-</span>Blog<span class="text-red-600 text-section ml-2">-</span></h1>
-  <div class="Blogs">
+  <div class="scroll Blogs flex justify-between flex-row-reverse overflow-x-scroll">
+    <div  v-for="blog in documents" :key="blog.id">
+      <div class=" mx-5 max-w-sm l:max-w-full">
+        <a href="/blog">
+        <img class=" rounded-large border-2 border-yellow-400    max-w-sm max-h-60 " :src="blog.imgUrl" alt="">
+        </a>
+         <div>
+         <h1 class=" mt-3 text-white text-sm font-semibold">{{ blog.title }}</h1>
+         <p class=" text-white opacity-75 mt-3">{{ blog.description }}</p>
+      </div>
+      </div>
+     
+    </div>
+    
 
   </div>
-  <div class="flex justify-center">
+  <div class="flex justify-center mt-11">
    <a class="readmore  text-sm text-white rounded-smm cursor-pointer px-9 py-2 " href="/blog">Read More</a>
   </div>
 </div>
@@ -82,7 +95,8 @@ All in on transparency, creativity, and speed. Partner with a tight-knit team of
 </template>
 
 <script>
-import { ref } from '@vue/reactivity'
+import getCollection from '../composables/getCollection'
+import { ref } from 'vue'
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
 
@@ -90,6 +104,13 @@ import Footer from '../components/Footer.vue'
 export default {
   components:{Navbar,Footer},
   setup(){
+
+       const {error,documents} = getCollection('blogs')
+
+       
+
+
+        return{error,documents}
   
    
   },
@@ -106,6 +127,20 @@ export default {
   box-shadow: 0px 4px 8px rgba(2, 10, 27, 0.2);
 
 
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0px;               /* width of the entire scrollbar */
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255,0.01);        /* color of the tracking area */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255,0.01);    /* color of the scroll thumb */
+      /* roundness of the scroll thumb */
+ 
 }
 
 
