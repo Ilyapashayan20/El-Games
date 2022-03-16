@@ -24,7 +24,7 @@ All in on transparency, creativity, and speed. Partner with a tight-knit team of
     <input v-model="email" class=" my-4 bg-transparent border-2 rounded-large border-white py-3 px-5 focus:border-red-700 focus:outline-none text-white text-sm" type="email" placeholder="Email" name="email" required>
     <textarea v-model="message" class=" mb-4 bg-transparent border-2 rounded-large border-white py-3 px-5 focus:border-red-700 focus:outline-none h-36  text-white text-sm" name="message" type="message" placeholder="Message" required />
 
-    <input  type="submit" value="Write Us"  class="bg-gradient-to-r from-yellow-400 to-red-600 rounded-large border-2 border-white text-white text-sm font-semibold py-2" />
+    <input  type="submit" value="Write Us"  class="bg-gradient-to-r from-yellow-400 to-red-600 rounded-large border-2 border-white text-white text-sm font-semibold py-2 cursor-pointer" />
     
     
     

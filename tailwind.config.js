@@ -6,6 +6,7 @@ module.exports = {
       'md': [{'max': '960px' }],
       'mdd': [{'max': '800px' }],
       'smm': [{'max': '629px' }],
+      'smn': [{'max': '560px' }],
       'lg': [{'max': '1440px' }],
       'lm': [{'max': '1150px' }],
       'l': [{'max': '476px' }],
@@ -13,7 +14,7 @@ module.exports = {
     },
    
       fontSize: {
-        sm: ['18px', '21px'],
+        sm: ['16px', '28px'],
         base: ['23px', '29px'],
         lg: ['29px', '28px'],
         xl: ['39px', '36px'],
@@ -30,6 +31,7 @@ module.exports = {
       DEFAULT: '0.25rem',
       DEFAULT: '4px',
       'md': '0.375rem',
+      '3xl': '24px',
       'lg': '0.5rem',
       'full': '9999px',
       'large': '24px',
@@ -46,6 +48,9 @@ module.exports = {
         '114': '29.5rem',
         '110px':'110px',
         
+      },
+      height:{
+        '100': '500px'
       },
       maxWidth: {
         'lgg': '20rem',
