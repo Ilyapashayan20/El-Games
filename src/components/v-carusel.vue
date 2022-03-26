@@ -49,12 +49,17 @@ export default {
               if(this.sliderIndex > 0){
                   this.sliderIndex--
                   console.log(this.sliderIndex);
+              } else{
+
+                   this.sliderIndex = this.carusel_data.length
+
+
               }
 
           },
            nextSlide(){
                if(this.sliderIndex >= this.carusel_data.length -1){
-                   this.sliderIndex = this.carusel_data.length -5
+                   this.sliderIndex = -1
                } 
               
                 this.sliderIndex++

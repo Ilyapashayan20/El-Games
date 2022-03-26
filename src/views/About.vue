@@ -41,14 +41,16 @@
 import { useLoadAbouts } from '../firebase/config'
 import Navbar from "../components/Navbar.vue"
 import Footer from '../components/Footer.vue'
+
 export default {
   components: {Navbar,Footer},
     setup(){
-        const abouts = useLoadAbouts()
 
-        return { abouts }
+      const abouts = useLoadAbouts()
+  
+
+    return{abouts}
     }
-
 }
 </script>
 

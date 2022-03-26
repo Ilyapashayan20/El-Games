@@ -46,14 +46,14 @@ All in on transparency, creativity, and speed. Partner with a tight-knit team of
 <div class="Blog-block mt-28 mb-28 max-w-7xl m-auto l:max-w-full">
   <h1 class='font-semibold text-section mb-14 text-white text-center'><span class="text-red-600 text-section mr-2">-</span>Blog<span class="text-red-600 text-section ml-2">-</span></h1>
   <div class="scroll Blogs flex justify-between flex-row-reverse overflow-x-scroll">
-    <div  v-for="blog in documents" :key="blog.id">
+    <div  v-for="post in posts" :key="post">
       <div class=" mx-5 max-w-sm l:max-w-full">
         <a href="/blog">
-        <img class=" rounded-large border-2 border-yellow-400    max-w-sm max-h-60 " :src="blog.imgUrl" alt="">
+        <img class=" rounded-large border-2 border-yellow-400    max-w-sm max-h-60 " :src="post.imgUrl" alt="">
         </a>
          <div>
-         <h1 class=" mt-3 text-white text-sm font-semibold">{{ blog.title }}</h1>
-         <p class=" text-white opacity-75 mt-3">{{ blog.description }}</p>
+         <h1 class=" mt-3 text-white text-sm font-semibold">{{ post.title }}</h1>
+         <p class=" text-white opacity-75 mt-3">{{ post.description }}</p>
       </div>
       </div>
      
@@ -62,7 +62,7 @@ All in on transparency, creativity, and speed. Partner with a tight-knit team of
 
   </div>
   <div class="flex justify-center mt-11">
-   <a class="readmore  text-sm text-white rounded-smm cursor-pointer px-9 py-2 " href="/blog">Read More</a>
+   <a  class="readmore  text-sm text-white rounded-smm cursor-pointer px-9 py-2 " href="/blog">Read More</a>
   </div>
 </div>
 </div>
@@ -73,28 +73,21 @@ All in on transparency, creativity, and speed. Partner with a tight-knit team of
 
 <script>
  
-  
-import getCollection from '../composables/getCollection'
-
 import Navbar from '../components/Navbar.vue'
+import { query, orderBy, limit } from "firebase/firestore";  
 import Footer from '../components/Footer.vue'
 import Slider from '../components/slider.vue'
+import { useLoadPosts } from '../firebase/config'
+import getCollection  from '../composables/getCollection' 
 
 
 export default {
   components:{Navbar,Footer,Slider},
   setup(){
-
-       const {error,documents} = getCollection('blogs')
-
-    
-
-       
-
-
-        return{error,documents,}
   
-   
+    const posts = useLoadPosts()
+    return{posts}
+     
   },
 
  
